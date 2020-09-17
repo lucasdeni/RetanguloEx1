@@ -7,19 +7,17 @@ namespace Ex1
 {
     class Retangulo
     {
-        public double Largura; 
-        public double Altura;
-        public double Area()
+        public double Area(double l, double a)
         {
-            return Largura * Altura;
+            return l * a;
         } 
-        public double Perimetro()
+        public double Perimetro(double l, double a)
         {
-            return (Largura * 2) + (Altura * 2);
+            return (l * 2) + (a * 2);
         }
-        public double Diagonal()
+        public double Diagonal(double l, double a)
         {
-            return Math.Sqrt((Largura * Largura) + (Altura * Altura));
+            return Math.Sqrt((l * l) + (a * a));
         }
     }
 }
